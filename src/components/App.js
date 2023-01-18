@@ -10,10 +10,10 @@ const App = () => {
     <div id="main">
                {/* Do not remove the main div */}
 <ol>
-  {relativelist.map((relativelist,indx)=>{
+  {relativelist.map((relativelist,relativeListItem)=>{
     
-    console.log(relativelist+indx);
-    return <li key={relativelist+indx}> Name : {relativesname}</li>
+    console.log(relativelist+relativeListItem);
+    return <li key={relativelist+relativeListItem}> Name : {relativesname}</li>
   })}
 </ol>
     </div>
