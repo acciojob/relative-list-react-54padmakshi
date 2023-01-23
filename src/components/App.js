@@ -1,20 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CleanPlugin } from 'webpack';
 
 const App = () => {
-  const [relativelist,setRelativeList]= useState([
-    "Uncle","Aunty","Neice","Nephew","Aunty",
-  ]);
+ 
 
   return (
     <div id="main">
                {/* Do not remove the main div */}
-<ol>
-  {relativelist.map((relativelist,relativeListItem)=>{
-    
-    console.log(relativelist+relativeListItem);
-    return <li key={relativelist+relativeListItem}> Name : {relativesname}</li>
-  })}
+<ol key="relativeList" id='relativeListItem'>
+  <li key="relativeList1" id='relativeListItem1'> Relative 1 -</li>
+  <li key="relativeList2" id='relativeListItem2'> Relative 2 -</li>
+  <li key="relativeList3" id='relativeListItem3'> Relative 3 -</li>
 </ol>
     </div>
   )
